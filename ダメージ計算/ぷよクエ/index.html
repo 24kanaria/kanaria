@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ダメージ計算機</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+          <a href="#" class="navbar-brand">ダメージ計算機</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+          <div class="row">
+            <section class="col-sm-6 col-md-4 pt-4">
+              <div class="form-group">
+                <label for="height">LS (倍)</label>
+                <input id="height-input" type="text" class="form-control" value="">
+              </div>
+              <div class="form-group">
+                <label for="weight">SLS (倍)</label>
+                <input id="weight-input" type="text" class="form-control" value="">
+              </div>
+              <div class="form-group">
+                <label for="atk">攻撃値</label>
+                <input id="atk-input" type="text" class="form-control" value="">
+              </div>
+
+              <div class="form-group">
+                <label for="oenn">状態異常（倍）</label>
+                <input id="oenn-input" type="text" class="form-control" value="">
+              </div>
+
+              <div class="form-group">
+                <label for="TB">タワーボーナス (倍)</label>
+                <input id="TB-input" type="text" class="form-control" value="">
+              </div>
+
+              <div class="form-group">
+                <label for="ennha">通常エンハンス (倍)</label>
+                <input id="ennha-input" type="text" class="form-control" value="">
+              </div>
+
+              <div class="form-group">
+                <label for="betuwaku">別枠エンハンス (倍)</label>
+                <input id="betuwaku-input" type="text" class="form-control" value="">
+              </div>
+
+              <div class="form-group">
+                <label for="yodame">与ダメ増加 (倍)</label>
+                <input id="yodame-input" type="text" class="form-control" value="">
+              </div>
+
+              <div class="form-group">
+                <label for="renngeki">連撃 (換算倍率)</label>
+                <input id="renngeki-input" type="text" class="form-control" value="">
+              </div>
+              <div class="form-group">
+                <label for="bannmenn">盤面倍率 (倍)</label>
+                <input id="bannmenn-input" type="text" class="form-control" value="">
+              </div>
+
+              <input id="button-submit" type="submit" class="btn btn-primary btn-large" value="計測開始">
+            </section>
+            <section class="col-sm-6 col-md-4 pt-4">
+              <div class="card">
+                <div class="card-header">
+                  ダメージ値
+                </div>
+                <div class="card-body">
+                  <div id="bmi-output" class="display-4"></div>
+                </div>
+              </div>
+            </section>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
